@@ -11,7 +11,12 @@ import SwiftUI
 struct UdemyCombine_SwiftUILessonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StoryListView()
+//                .environmentObject(UserSettings())
         }
+    }
+
+    init() {
+        NavigationConfigurator.setupNavigationBar()
     }
 }
